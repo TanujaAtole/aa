@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diffie-Hellman Key Exchange Demo</title>
+    <script src="diffie.js"></script>
+</head>
+<body>
+    <h1>Diffie-Hellman Key Exchange</h1>
+    <form>
+        <label>Enter the value of p (prime):</label>
+        <input type="text" id="txtP" /><br/><br/>
+
+        <label>Enter the value of g (primitive root):</label>
+        <input type="text" id="txtG" /><br/><br/>
+
+        <label>Enter Alice's private key (integer):</label>
+        <input type="text" id="txtAPrivate" value="6" /><br/><br/>
+
+        <label>Enter Bob's private key (integer):</label>
+        <input type="text" id="txtBPrivate" value="15" /><br/><br/>
+
+        <input type="button" value="Submit" onclick="getKey()" />
+        <input type="reset" value="Clear" /> <br/><br/><br/><br/>
+
+        <label>A's Shared Secret Key:</label>
+        <input type="text" id="txtASecret" readonly/><br/><br/>
+
+        <label>B's Shared Secret Key:</label>
+        <input type="text" id="txtBSecret" readonly/><br/><br/>
+    </form>
+</body>
+</html>
